@@ -12,6 +12,8 @@ body{
 
 /* Navbar */
 
+
+
 nav > ul{
     /* Remove bullet points */
     list-style-type: none;
@@ -20,18 +22,23 @@ nav > ul{
     padding: 0;
     margin: 0;
 
-    padding-top: 10px;
-    padding-left: 150px;
-    padding-right: 150px;
+    /* padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 13%;
+    padding-right: 13%; */
 
     font-family: latoRegular, Helvetica, sans-serif;
+
+    border-bottom: 1px solid #dddddd;
 }
 nav > ul > li{
     padding: 10px 10px 10px 10px;
     display: inline-block;
+
+
 }
 nav > ul > li.right{
-    display: inline;
+        display: inline;
     float: right;
     font-size: 18px;
 }
@@ -40,6 +47,63 @@ nav > ul > li > a{
     color: #1865f2;
     text-decoration: none;
 }
-nav > ul > li > a:hover{
-    color: #1864f2ce;
+nav > ul > li > a.hoverable:hover{
+    /* color: #1864f2ce; */
+    border-bottom: 2px solid #1865f2;
 }
+
+.activePage{
+    border-bottom: 2px solid #1865f2;
+}
+
+#toggle{
+    /* display:none */
+}
+
+@media screen and (min-width: 0) {
+    nav > ul{
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 5px;
+        padding-right: 0;
+    }
+
+    .rightLinks{
+        display: none;
+    }
+
+    .burgerMenu{
+        display: block;
+        background-image: url("icons/burger-bar.png");
+        font-weight: bold;
+
+        /* Make menu icon unselectable */
+        -webkit-user-select: none;  
+        -moz-user-select: none;    
+        -ms-user-select: none;      
+        user-select: none;
+
+        color: #1865f2;
+        
+
+    }
+}
+
+@media screen and (min-width: 750px) {
+    nav > ul{
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 13%;
+        padding-right: 13%;
+    }
+
+    .rightLinks{
+        display: block;
+    }
+
+    .burgerMenu{
+        display: none;
+    }
+}
+
+
