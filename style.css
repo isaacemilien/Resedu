@@ -11,9 +11,6 @@ body{
 }
 
 /* Navbar */
-
-
-
 nav > ul{
     /* Remove bullet points */
     list-style-type: none;
@@ -57,10 +54,17 @@ nav > ul > li > a.hoverable:hover{
 }
 
 #toggle{
-    /* display:none */
+    display:none
 }
 
+
+
 @media screen and (min-width: 0) {
+
+    ul.dropdown{
+        display: none;
+    }
+
     nav > ul{
         padding-top: 10px;
         padding-bottom: 10px;
@@ -74,7 +78,7 @@ nav > ul > li > a.hoverable:hover{
 
     .burgerMenu{
         display: block;
-        background-image: url("icons/burger-bar.png");
+        /* background-image: url("icons/burger-bar.png"); */
         font-weight: bold;
 
         /* Make menu icon unselectable */
@@ -86,6 +90,16 @@ nav > ul > li > a.hoverable:hover{
         color: #1865f2;
         
 
+    }
+
+    input:checked ~ nav ul.dropdown{
+        display: block;
+    }
+    input:checked ~ nav ul li label span{
+        display: none;
+    }
+    input:checked ~ nav ul li label.burgerMenu::after{
+        content: "✕";
     }
 }
 
@@ -104,6 +118,23 @@ nav > ul > li > a.hoverable:hover{
     .burgerMenu{
         display: none;
     }
+
+    ul.dropdown{
+        display: none;
+    }
+
+    input:checked ~ nav ul.dropdown{
+        display: none;
+    }
+    input:checked ~ nav ul li label span{
+        display: none;
+    }
+    input:checked ~ nav ul li label.burgerMenu::after{
+        content: "☰";
+    }
 }
+
+
+
 
 
