@@ -1,13 +1,18 @@
 /* Fonts */
 @font-face {
     font-family: latoRegular;
+    src: url(fonts/Lato-Regular.ttf);
+}
+@font-face {
+    font-family: latoBold;
     src: url(fonts/Lato-Bold.ttf);
-    
 }
 
 body{
     padding: 0;
     margin: 0;
+    font-family: latoRegular, Helvetica, sans-serif;    
+
 }
 
 /* Navbar */
@@ -19,12 +24,7 @@ nav > ul{
     padding: 0;
     margin: 0;
 
-    /* padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 13%;
-    padding-right: 13%; */
-
-    font-family: latoRegular, Helvetica, sans-serif;
+    font-family: latoBold, Helvetica, sans-serif;
 
     border-bottom: 1px solid #dddddd;
 }
@@ -135,6 +135,61 @@ nav > ul > li > a.hoverable:hover{
 }
 
 
+/* Blog post styles */
+.blogContainer{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
 
+.blogTitle{
+    margin-bottom: 0;
+}
+
+.blogDescription{
+    margin-top: 0;
+    color: #666666;
+}
+
+.blogAuthor{
+    /* color: #1865f2; */
+    margin-bottom: 0;
+}
+
+.blogDate{
+    margin-top: 2mm;
+}
+
+.blogHeadImage{
+    float: left;
+    max-width:100%;
+    height: auto;
+    object-fit: cover;
+    padding-bottom: 30px;
+}
+
+.blogContent{
+}
+
+@media screen and (min-width: 0){
+    .blogContainer{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 90%;
+    }
+}
+@media screen and (min-width: 0){
+    .blogContainer{
+        width: 90%;
+    }
+}
+
+@media screen and (min-width: 750px){
+    .blogContainer{
+        width: 50%;
+    }
+}
 
 
