@@ -11,35 +11,33 @@
     <!-- Navbar -->
     <input type="checkbox" id="toggle">
     
-    <nav>
-        <ul>
-            <li><a class="activePage " href="index.html">Learning journal</a></li>
-            <li class="right"><label class="burgerMenu" for="toggle"><span>☰</span></label></li>
-            <li class="right"><a class="rightLinks hoverable" href="#contact">Contact</a></li>
-            <li class="right"><a class="rightLinks hoverable" href="#studyskills">Study skills</a></li>
+    <nav class="top-nav">
+        <ul class="horizontal">
+            <li><a class="active-page" href="index.html">Learning journal</a></li>
+            <li><label class="burger-menu" for="toggle"><span>☰</span></label></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#studyskills">Study skills</a></li>
         </ul>
-        <ul class="dropdown">
-            <li><a class="hoverable" href="#studyskills">Study skills</a></li>
-        </ul>
-        <ul class="dropdown">
-            <li><a class="hoverable" href="#contact">Contact</a></li>
+
+        <ul class="vertical">
+            <li><a href="#studyskills">Study skills</a></li>
+            <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
 
     <!-- Head image -->
-    <img src="images/books-01.jpg" alt="" class="headImage">
+    <img src="images/books-01.jpg" alt="" class="head-image">
 
     <!-- Blog-->
-    <div class="blogContainer">
-        <h1 class="blogTitle">Week 1: Basic HTML Page</h1>
-        <h2 class="blogDescription">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias delectus culpa labore optio voluptates vitae.</h2>
-        <h3 class="blogAuthor">By Isaac Emilien</h3>
-        <h5 class="blogDate"><time datetime="2022-10-08">October 8, 2022</time></h5>
-        <img src="images/html-example-01.png" alt="Image of HTML markup." class="blogHeadImage">
-        <div class="blogContent">
+    <article class="blog-container">
+        <h1 class="blog-title">Week 1: Basic HTML Page</h1>
+        <h2 class="blog-description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias delectus culpa labore optio voluptates vitae.</h2>
+        <h3 class="blog-author">By Isaac Emilien</h3>
+        <h5 class="blog-date"><time datetime="2022-10-08">October 8, 2022</time></h5>
+        <img src="images/html-example-01.png" alt="Image of HTML markup." class="blog-head-image">
+        <article class="blog-content">
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit soluta veritatis distinctio provident iusto corporis totam quam aliquam rem, natus ad quas blanditiis repudiandae recusandae! Deserunt ad expedita explicabo quibusdam laboriosam. Inventore earum numquam iure tempora in, error fugit vel sit quibusdam, rerum omnis aperiam quaerat blanditiis labore, ducimus non!</p>
-        </div>  
-    </div>
-
+        </article>  
+    </article>
 </body>
 </html>

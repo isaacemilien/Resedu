@@ -1,141 +1,145 @@
-/* Fonts */
+/* Font properties */
 @font-face {
-    font-family: latoRegular;
+    font-family: lato-regular;
     src: url(fonts/Lato-Regular.ttf);
 }
 @font-face {
-    font-family: latoBold;
+    font-family: lato-bold;
     src: url(fonts/Lato-Bold.ttf);
 }
 
+/* Custom properties */
+:root {
+    --top-nav-text-color: #1865f2;
+}
+
 body{
+    /* Removes default white space surrounding page */
     padding: 0;
     margin: 0;
-    font-family: latoRegular, Helvetica, sans-serif;    
 
+    /* Set default fonts */
+    font-family: lato-regular, Helvetica, sans-serif;    
 }
 
 /* Navbar */
-nav > ul{
+nav.top-nav ul{
     /* Remove bullet points */
     list-style-type: none;
 
-    /* Remove dafault whitespace surrounding nav bar */
     padding: 0;
     margin: 0;
 
-    font-family: latoBold, Helvetica, sans-serif;
+    font-family: lato-bold, Helvetica, sans-serif;
 
     border-bottom: 1px solid #dddddd;
 }
-nav > ul > li{
+
+nav.top-nav ul.vertical li{
+    padding: 10px 10px 10px 15px;
+    border-bottom: 1px solid #dddddd;
+}
+
+nav.top-nav ul.horizontal li{
     padding: 10px 10px 10px 10px;
     display: inline-block;
 
-
 }
-nav > ul > li.right{
-        display: inline;
+nav.top-nav ul.horizontal li:not(:first-child){
+    display: inline;
     float: right;
     font-size: 18px;
 }
 
-nav > ul > li > a{
-    color: #1865f2;
+nav.top-nav a{
+    color: var(--top-nav-text-color);
     text-decoration: none;
 }
-nav > ul > li > a.hoverable:hover{
-    /* color: #1864f2ce; */
-    border-bottom: 2px solid #1865f2;
+
+nav.top-nav a:hover{
+    border-bottom: 2px solid var(--top-nav-text-color);
 }
 
-.activePage{
-    border-bottom: 2px solid #1865f2;
+.active-page{
+    border-bottom: 2px solid var(--top-nav-text-color);
 }
 
 #toggle{
     display:none
 }
 
+.burger-menu{
+    display: block;
+    font-weight: bold;
 
+    -webkit-user-select: none;  
+    -moz-user-select: none;    
+    -ms-user-select: none;      
+    user-select: none;
+
+    color: var(--top-nav-text-color);
+}
 
 @media screen and (min-width: 0) {
 
-    ul.dropdown{
+    nav.top-nav ul.vertical{
         display: none;
     }
 
-    nav > ul{
+    nav.top-nav ul.horizontal{
         padding-top: 10px;
         padding-bottom: 10px;
         padding-left: 5px;
         padding-right: 0;
     }
 
-    .rightLinks{
+    nav.top-nav ul.horizontal li:not(:first-child) a{
         display: none;
     }
-
-    .burgerMenu{
-        display: block;
-        /* background-image: url("icons/burger-bar.png"); */
-        font-weight: bold;
-
-        /* Make menu icon unselectable */
-        -webkit-user-select: none;  
-        -moz-user-select: none;    
-        -ms-user-select: none;      
-        user-select: none;
-
-        color: #1865f2;
-        
-
-    }
-
-    input:checked ~ nav ul.dropdown{
+    input:checked ~ nav.top-nav ul.vertical{
         display: block;
     }
-    input:checked ~ nav ul li label span{
+    input:checked ~ nav.top-nav ul li label span{
         display: none;
     }
-    input:checked ~ nav ul li label.burgerMenu::after{
+    input:checked ~ nav.top-nav ul li label.burger-menu::after{
         content: "✕";
     }
 }
 
 @media screen and (min-width: 750px) {
-    nav > ul{
+    nav.top-nav ul.horizontal{
         padding-top: 10px;
         padding-bottom: 10px;
         padding-left: 13%;
         padding-right: 13%;
     }
 
-    .rightLinks{
+    nav.top-nav ul.horizontal li:not(:first-child) a{
         display: block;
     }
 
-    .burgerMenu{
+    .burger-menu{
         display: none;
     }
 
-    ul.dropdown{
+    nav.top-nav ul.vertical{
         display: none;
     }
 
-    input:checked ~ nav ul.dropdown{
+    input:checked ~ nav ul.vertical{
         display: none;
     }
     input:checked ~ nav ul li label span{
         display: none;
     }
-    input:checked ~ nav ul li label.burgerMenu::after{
+    input:checked ~ nav ul li label.burger-menu::after{
         content: "☰";
     }
 }
 
 /* Head */
-.headImage{
+.head-image{
     float: left;
     max-width:100%;
     height: auto;
@@ -144,33 +148,33 @@ nav > ul > li > a.hoverable:hover{
 }
 
 /* Blog post styles */
-.blogContainer{
+.blog-container{
     display: block;
     margin-left: auto;
     margin-right: auto;
     width: 50%;
 }
 
-.blogTitle{
+.blog-title{
     margin-bottom: 0;
 }
 
-.blogDescription{
+.blog-description{
     margin-top: 0;
     color: #666666;
 }
 
-.blogAuthor{
-    /* color: #1865f2; */
+.blog-author{
+    /* color: var(--top-nav-text-color); */
     margin-bottom: 0;
 }
 
-.blogDate{
+.blog-date{
     margin-top: 2mm;
     color: #666666;
 }
 
-.blogHeadImage{
+.blog-head-image{
     float: left;
     max-width:100%;
     height: auto;
@@ -178,27 +182,20 @@ nav > ul > li > a.hoverable:hover{
     padding-bottom: 30px;
 }
 
-.blogContent{
+.blog-content{
 }
 
 @media screen and (min-width: 0){
-    .blogContainer{
+    .blog-container{
         display: block;
         margin-left: auto;
         margin-right: auto;
         width: 90%;
     }
 }
-@media screen and (min-width: 0){
-    .blogContainer{
-        width: 90%;
-    }
-}
 
 @media screen and (min-width: 750px){
-    .blogContainer{
+    .blog-container{
         width: 50%;
     }
 }
-
-
