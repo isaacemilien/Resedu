@@ -127,14 +127,11 @@ nav.top-nav a:hover{
         display: none;
     }
 
-    input:checked ~ nav ul.vertical{
+    input:checked ~ nav.top-nav ul.vertical{
         display: none;
     }
-    input:checked ~ nav ul li label span{
-        display: none;
-    }
-    input:checked ~ nav ul li label.burger-menu::after{
-        content: "☰";
+    input:checked ~ nav.top-nav ul li label span{
+        display: block;
     }
 }
 
@@ -147,7 +144,7 @@ nav.top-nav a:hover{
     padding-bottom: 30px;
 }
 
-/* Blog post styles */
+/* Blog post */
 .blog-container{
     display: block;
     margin-left: auto;
