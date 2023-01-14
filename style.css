@@ -197,7 +197,7 @@ nav.top-nav a:hover{
     }
 }
 
-@media screen and (min-width: 750px){
+@media screen and (min-width: 850px){
     .blog-container{
         width: 50%;
     }
