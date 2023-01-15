@@ -191,10 +191,13 @@ input:checked ~ nav.top-nav ul li label.burger-menu::after{
     margin-left: auto;
     margin-right: auto;
     width: 75%;
+
+    padding-bottom: 8%;
+    padding-top: 10%;
 }
 
 .dropdown-block{
-    /* padding-bottom: 100px; */
+    margin-top: 2%;
 }
 
 .dropdown-block h2{
@@ -208,33 +211,13 @@ input:checked ~ nav.top-nav ul li label.burger-menu::after{
 }
 
 .dropdown-block article{
-    /* display: none; */
-    /* transition: padding .4s ease-in-out, opacity .4s ease-in-out;
-    overflow: hidden;
     height: 0;
-    padding: 0; */
-
-    line-height: 0;
-    opacity: 0;
-    padding: 0 .5rem;
-    transition: .5s ease-out;
-
+    overflow: hidden;
+    transition: 1s;
 }
-
-.dropdown-block ~ article > p{
-    margin: 0;
-    transition: .5s ease-out;
-}
-
 
 input:checked ~ article{
-    opacity: 1;
-    padding: .5rem;
-    line-height: 1.5;
-}
-
-input:checked ~ article > p{
-    margin-bottom: .75rem;
+    height: 200px;
 }
 
 .dropdown-block label{
