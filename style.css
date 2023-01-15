@@ -79,10 +79,6 @@ nav.top-nav a:hover{
     border-bottom: 2px solid var(--top-nav-text-color);
 }
 
-#toggle{
-    display:none
-}
-
 .burger-menu{   
     font-weight: bold;
 
@@ -188,6 +184,65 @@ input:checked ~ nav.top-nav ul li label.burger-menu::after{
     .blog-container{
         width: 50%;
     }
+}
+
+/* Study skills */
+.study-container{
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%;
+}
+
+.dropdown-block{
+    /* padding-bottom: 100px; */
+}
+
+.dropdown-block h2{
+    display: inline-block;
+    margin: 0;
+}
+
+.dropdown-block label{
+    display: inline;
+    float: right;
+}
+
+.dropdown-block article{
+    /* display: none; */
+    /* transition: padding .4s ease-in-out, opacity .4s ease-in-out;
+    overflow: hidden;
+    height: 0;
+    padding: 0; */
+
+    line-height: 0;
+    opacity: 0;
+    padding: 0 .5rem;
+    transition: .5s ease-out;
+
+}
+
+.dropdown-block ~ article > p{
+    margin: 0;
+    transition: .5s ease-out;
+}
+
+
+input:checked ~ article{
+    opacity: 1;
+    padding: .5rem;
+    line-height: 1.5;
+}
+
+input:checked ~ article > p{
+    margin-bottom: .75rem;
+}
+
+.dropdown-block label{
+    transition: transform .4s;
+}
+
+input:checked ~ label{
+    transform: rotate(0.5turn);
 }
 
 /* Footer */
