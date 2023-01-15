@@ -202,3 +202,20 @@ nav.top-nav a:hover{
         width: 50%;
     }
 }
+
+/* Footer */
+footer{
+    padding: 40px;
+
+    background-color: #0B2149;
+    color: white;
+}
+
+footer a:link, a:visited{
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover{
+    text-decoration: underline;
+}
