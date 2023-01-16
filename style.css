@@ -228,6 +228,89 @@ input:checked ~ label{
     transform: rotate(0.5turn);
 }
 
+/* Contact */
+
+.contact-container{
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+
+    padding-bottom: 20%;
+    padding-top: 10%;
+}
+
+.contact-container div, #contact-submit{
+    padding-top: 6%;
+}
+.contact-container div input{
+    width: 100%;
+    border: none;
+    outline: none;
+    border-bottom: black solid 1px;
+    font-family: lato-regular;
+}
+
+div.name-container input{
+    /* width: 48%; */
+}
+
+div.name-container input:nth-child(2){
+    display: block;
+    padding-top: 6%;
+
+}
+
+
+#contact-topics{
+    width: 100%;
+    border: none;
+    outline: none;
+    border-bottom: black solid 1px;
+    font-family: lato-regular;
+}
+
+#contact-submit{
+    padding: 2%;
+    float: right;
+    width: 20%;
+    text-align: center;
+    border-radius: 7px;
+    color: var(--top-nav-text-color);
+    background-color: white;
+    border: 1px solid black;
+    margin-bottom: 5%;
+}
+
+#contact-submit:hover{
+    margin-top:-1px;
+    border: 2px solid var(--top-nav-text-color);
+}
+.contact-container div input::placeholder{
+    color: black;
+}
+
+
+@media screen and (min-width: 1000px){
+    .contact-container{
+        margin-left: auto;
+        margin-right: auto;
+        width: 75%;
+    
+        padding-bottom: 9%;
+        padding-top: 10%;
+    }
+
+    div.name-container input {
+        width: 48%;
+
+    }
+
+    div.name-container input:nth-child(2){
+        float: right;
+        padding-top: 0%;
+    }
+}
+
 /* Footer */
 footer{
     padding: 40px;

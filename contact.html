@@ -30,16 +30,44 @@
         <img src="images/books-01.jpg" alt="" class="head-image">
     </header>
 
-    <main>
-        <h1>lol</h1>
-        <h1>lol</h1>
-        <h1>lol</h1>
-        <h1>lol</h1>
-        <h1>lol</h1>
-        <h1>lol</h1>
-        <h1>lol</h1>
-        <h1>lol</h1>
-        <h1>lol</h1>
+    <main class="contact-container">
+        <h1>Please get in touch</h1>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Asperiores placeat ea in dolores nemo laborum incidunt natus accusamus tempore ducimus!</p>
+        
+        <form action="" method="get" >
+
+            <div>
+                <select name="contact-topics" id="contact-topics">
+                    <option value="" selected disabled hidden>I'd like to chat about...</option>
+                    <option value="general-inquiry">General inquiry</option>
+                    <option value="cup-enquiry">All the empty cups on my desk</option>
+                </select>
+            </div>
+
+            <div class="name-container">
+                <input type="text" name="name" id="first-name" placeholder="First name" required>
+                <input type="text" name="name" id="second-name" placeholder="Second name" required>
+            </div>
+
+            <div>
+                <input type="email" name="email"id="email" placeholder="Email address" required>
+            </div>
+
+            <div>
+                <input type="text" name="message"id="message" placeholder="Message" required>
+            </div>
+            <div>
+                <input type="submit" value="SUBMIT" id="contact-submit">
+            </div>
+
+          </form>          
     </main>
+        
+    <footer>
+        <a href="mailto:i.emilien1@uni.brighton.ac.uk">Email</a>
+	    <p><a href="#">Go to top</a></p>
+        <hr>
+		<small>&copy; 2022, Isaac Emilien.</small>
+    </footer>
 </body>
 </html>
