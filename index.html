@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet"href="normalize.css"> -->
     <link rel="stylesheet" href="style.css">
     <title>Resedu</title>
 </head>
@@ -34,16 +35,178 @@
 
     <main>
         <!-- Blog-->
+
+        <!-- Week 9 -->
         <article class="blog-container">
-            <h1 class="blog-title">Week 1: Basic HTML Page</h1>
-            <h2 class="blog-description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias delectus culpa labore optio voluptates vitae.</h2>
+            <h1 class="blog-title">Week 9: HTML Forms and Styling</h1>
+            <h2 class="blog-description">Basics of creating and styling forms on a webpage.</h2>
+            <h3 class="blog-author">By Isaac Emilien</h3>
+            <h5 class="blog-date"><time datetime="2022-10-29">October 29, 2022</time></h5>
+            <img src="images/html-example-01.png" alt="Image of HTML markup." class="blog-head-image">
+            <div class="blog-content">
+                <p>This week’s learning was about the implementation and styling of forms, consisting of information about the uses for forms, form elements, and basic form CSS.</p>
+                <h3>HTML Form Uses</h3>
+                <p>Forms are used as a gateway for information to be collected from users, finding applications in account utilities, and customer service. Fully functional forms however typically make use of client side scripting language for validation, and a server side scripting language for data exchange.</p>
+                <h3>HTML Form Elements</h3>
+                <p>Core HTML forms are composed of two elements <Form> and <Input>. The form element acts as a container for all inner elements that will make up a form. Input elements make up the fields for which users interact with the given information.</p>
+                <h3>Implementations</h3>
+                <p>While implementing this week’s HTML forms, for the contact page, there were issues trying to use HTML built in validation. From reading Mozilla’s HTML documentation on input [8] attributes it was realised that an input element needs to have the ‘required’ field attached in order to properly use validation.</p>
+            </div>  
+        </article>
+
+        <!-- Week 8 -->
+        <article class="blog-container">
+            <h1 class="blog-title">Week 8: Responsive Web Design Layouts</h1>
+            <h2 class="blog-description">Deeper look at placing objects on a page responsively</h2>
+            <h3 class="blog-author">By Isaac Emilien</h3>
+            <h5 class="blog-date"><time datetime="2022-11-18">November 18, 2022</time></h5>
+            <img src="images/html-example-01.png" alt="Image of HTML markup." class="blog-head-image">
+            <div class="blog-content">
+                <p>This week knowledge was gained about CSS layout properties, use of layout modules, and media query breakpoints</p>
+                <h3>CSS Layout Properties</h3>
+                <p>CSS layout properties define how HTML elements should be placed. Layout properties include float, clear, and position. Float pushes an element to the bounds of its container in a given direction. Clear defines the point at which an object should be moved to the row below. Position overrides the positioning constraints of the container it is in.</p>
+                <h3>CSS Media Query Breakpoints</h3>
+                <p>CSS media query breakpoints define a viewport value at which a style should be enacted.</p>
+                <h3>Implementations</h3>
+                <p>While implementing CSS media queries for different parts of the learning journal it was noticed that parts of the CSS being written seemed redundant.</p>
+                <img src="" alt="Week 8 css example images">
+                <p>With this further research was done on responsive design using W3CSchools [7]. From this it was understood that CSS implemented thus far was not mobile first, and had been designed with desktop in mind first and foremost. To solve this problem default styles were tailored for mobile, allowing for removal of two points setting the same property values.</p>
+            </div>  
+        </article>
+
+        <!-- Week 7 -->
+        <article class="blog-container">
+            <h1 class="blog-title">Week 7: Further responsive web design</h1>
+            <h2 class="blog-description">Takes deeper look at responsive web design elements</h2>
+            <h3 class="blog-author">By Isaac Emilien</h3>
+            <h5 class="blog-date"><time datetime="2022-11-11">November 11, 2022</time></h5>
+            <img src="images/html-example-01.png" alt="Image of HTML markup." class="blog-head-image">
+            <div class="blog-content">
+                <p>CI 435 week 7 further explored principles of responsive web design, topics covered were: how to approach the implementation of responsive design elements, making media responsive, and the safe use of media from the web.</p>
+                <h3>Core Principles</h3>
+                <p>The core principles of how to approach responsive web design implementation is the 3 column method, this proposes that the structure of web pages when viewed on mobile take up 1 column, on table or mobile portrait take up 2 columns, and on desktop take up 3 columns.</p>
+                <h3>Responsive Media</h3>
+                <p>Responsive media is the sizing of webpage images and videos based on screen size, which can be challenging factoring the range of media quality that can be chosen. Media flexibility using vanilla CSS can be achieved using media queries and ratio based width height sizes.</p>
+                <h3>Safe Media</h3>
+                <p>Safe use of media is of high priority given the context of how our web pages are presented in CI435. Our web pages are available to the open web, this means that even though we are in an educational context, the content we use is still open to the public, leaving us liable for use of content that is not ours. To account for this creative commons content can be used.</p>
+            </div>  
+        </article>
+        
+        <!-- Week 6 -->
+        <article class="blog-container">
+            <h1 class="blog-title">Week 6: Introduction to Responsive Web Design</h1>
+            <h2 class="blog-description">Covers starting points for creating responsive web pages</h2>
+            <h3 class="blog-author">By Isaac Emilien</h3>
+            <h5 class="blog-date"><time datetime="2022-11-05">November 5, 2022</time></h5>
+            <img src="images/html-example-01.png" alt="Image of HTML markup." class="blog-head-image">
+            <div class="blog-content">
+                <p>This week knowledge gained covered responsive web design using fluid layouts, and media queries, and responsive media.</p>
+                <h3>CSS Fluid Layouts</h3>
+                <p>Fluid layouts use relative units and CSS layout modules to create responsive content. CSS layout modules such as grids, flexbox, and multi-column, allow for row-column placing of elements without having to use the position properties directly.</p>
+                <h3>CSS Media Queries</h3>
+                <p>Media queries are CSS elements that apply styles to HTML based on certain screen size, in our case the size of the screen; this allows us to structure our webpage to best suit the screen size of the device that it is being viewed through.</p>
+                <h3>Implementations</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iure, qui?</p>
+            </div>  
+        </article>
+
+        <!-- Week 5 -->
+        <article class="blog-container">
+            <h1 class="blog-title">Week 5: CSS Box Model and Relative Styles</h1>
+            <h2 class="blog-description">How the CSS block model and relative styles can be used to better position and size elements</h2>
+            <h3 class="blog-author">By Isaac Emilien</h3>
+            <h5 class="blog-date"><time datetime="2022-10-29">October 29, 2022</time></h5>
+            <img src="images/html-example-01.png" alt="Image of HTML markup." class="blog-head-image">
+            <div class="blog-content">
+                <p>This week further CSS knowledge was further improved, which covered, positioning and sizing elements using the box model, and styling text.</p>
+                <h3>Box Model</h3>
+                <p>The CSS box model allows one to dictate how parts of html are shown and placed on a page. In the box model parts of HTML are seen as boxes, these boxes can be logically moved or placed inside the bounds of other elements.</p>
+                <h3>Relative Units</h3>
+                <p>Relative units in CSS are values that change based on the page.This allows values that are assigned relative units to be dynamic to the size of content.</p>
+                <h3>Implementations</h3>
+                <p>This week fallback fonts were added, allowing unavailability of fonts to be accounted for and hinder user performance less. After a fallback font was selected, the custom font Lato was also added; to do so the new font file was added to the website folder structure, and a font face was defined in the styles.css. During implementation of the font there were legal and ethical concerns, this is because implementing external content made by someone without their permission could breach intellectual property rights, resulting in potential liability. To account for this the font Lato was sourced from Google Fonts [6], which is a free to use, open source library for fonts.</p>
+                <img src="" alt="Week 5 image about font, also could put video about google fonts">
+            </div>  
+        </article>
+
+        <!-- Week 4 -->
+        <article class="blog-container">
+            <h1 class="blog-title">Week 4: CSS Basics</h1>
+            <h2 class="blog-description">Starting to look at styling pages using CSS</h2>
+            <h3 class="blog-author">By Isaac Emilien</h3>
+            <h5 class="blog-date"><time datetime="2022-10-22">October 22, 2022</time></h5>
+            <img src="images/html-example-01.png" alt="Image of HTML markup." class="blog-head-image">
+            <div class="blog-content">
+                <p>Using this week’s resources an understanding of how to implement external and embedded CSS , select elements, share styles, and apply further page styling was gained.</p>
+                <h3>CSS</h3>
+                <p>CSS is a markup language that stands for Cascading Style Sheets. CSS is used to customise the presentation of HTML. [5]</p>
+                <h3>External and Embedded CSS</h3>
+                <p>External and embedded CSS refers to how styles are linked to a page. External CSS are styles held in a separate file, saved as .css. Internal CSS is applied within a HTML file using the style element.</p>
+                <h3>Implementations</h3>
+                <p>While CSS was previously used on the site to add styles, and solve particular problems that were occurring with default HTML elements, the normalisation page had not yet been implemented. After creating the normalisation.css file however it had no effect on the styles, later it was realised that even though the normalisation file was created, it had not been referenced in the index file.</p>
+                <img src="" alt="Week 4 image placeholder">
+            </div>  
+        </article>
+
+        <!-- Week 3 -->
+        <article class="blog-container">
+            <h1 class="blog-title">Week 3: Further HTML Document Structure</h1>
+            <h2 class="blog-description">A deeper look at laying out a web page with HTML</h2>
+            <h3 class="blog-author">By Isaac Emilien</h3>
+            <h5 class="blog-date"><time datetime="2022-10-15">October 15, 2022</time></h5>
+            <img src="images/html-example-01.png" alt="Image of HTML markup." class="blog-head-image">
+            <div class="blog-content">
+                <p>This week’s learning covered the use of section and div elements, navigation, and various elements to display information. Alongside this a HTML table representing </p>
+                <h3>Section and Div Elements</h3>
+                <p>Section and div elements are used to define logical collections of information on the page. Sections more so encompass typical page specific content such as headers, footers, and navigation. Div elements define looser general divisions of content.</p>
+                <h3>Document Navigation</h3>
+                <p>Document navigation is achieved using anchors and links. Anchors are defined using the <a> tag; anchors hold links which connect to another page, or page area.</p>
+                <h3>Implementations</h3>
+                <p>A table was added containing information about university lectures and labs. After adding the table the overall look was not satisfactory; to further style it a blogpost from Anna Fitzgerald was referenced [4, allowing for change of colour and text style using CSS></p>
+            </div>  
+        </article>
+        
+        <!-- Week 2 -->
+        <article class="blog-container">
+            <h1 class="blog-title">Week 2: HTML Markup basics</h1>
+            <h2 class="blog-description">Simple websites structuring using HTML</h2>
             <h3 class="blog-author">By Isaac Emilien</h3>
             <h5 class="blog-date"><time datetime="2022-10-08">October 8, 2022</time></h5>
             <img src="images/html-example-01.png" alt="Image of HTML markup." class="blog-head-image">
             <div class="blog-content">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit soluta veritatis distinctio provident iusto corporis totam quam aliquam rem, natus ad quas blanditiis repudiandae recusandae! Deserunt ad expedita explicabo quibusdam laboriosam. Inventore earum numquam iure tempora in, error fugit vel sit quibusdam, rerum omnis aperiam quaerat blanditiis labore, ducimus non!</p>
+                <p>This week learning covered the basics of HTML which included: tags and elements, block and inline elements, and natural document structure. Furthermore, newly learned elements were implemented.</p>
+                <h3>Tags and Elements</h3>
+                <p>Tags and elements are keywords in HTML when applied to text define their meaning [2].  Elements are the function itself,  tags define bounds of an element.</p>
+                <h3>Block and Inline Elements</h3>
+                <p>HTML block and inline are two types of element. Block elements naturally stack horizontally and fill a page row, examples include h1, and p. Inline elements are held inside block elements and can be used to perform a function on them.</p>
+                <h3>Natural Document Structure</h3>
+                <p>HTML documents naturally follow a nested structure enabling:</p>
+                <ul>
+                    <li>Placement of elements within or below one another</li>
+                    <li>Logical placement of content on page</li>
+                </ul>
             </div>  
         </article>
+
+        <!-- Week 1 -->
+        <article class="blog-container">
+            <h1 class="blog-title">Week 1: Introduction to Web Development</h1>
+            <h2 class="blog-description">An opener to the basics of web development</h2>
+            <h3 class="blog-author">By Isaac Emilien</h3>
+            <h5 class="blog-date"><time datetime="2022-10-01">October 1, 2022</time></h5>
+            <img src="images/html-example-01.png" alt="Image of HTML markup." class="blog-head-image">
+            <div class="blog-content">
+                <p>This week's lectures covered the fundamentals of web development. This covers responsive web design, standards, and reasoning behind HTML and CSS rules. Further knowledge gained about these were:</p>
+                <h3>Responsive Design</h3>
+                <p>Responsive design is the adjusting of website scaling based on the device screen. Meaning that the content can be seen on a large variety of devices.</p>
+                <p>While learning this topic there was difficulty understanding how basic responsive design worked, from reading [1] interaction-design.org’s article and new understanding  that responsive design is implemented based first on by reading the width of  a user's device to gauge how to size elements.</p>
+                <h3>Web Standards</h3>
+                <p>Web standards are a set of rules for displaying information on the web. Web standards allow for information to be shown in a similar way on different platforms.</p>
+            </div>  
+        </article>
+
+
+
     </main>
     
     <footer>

@@ -176,9 +176,9 @@ header h1{
     }
 }
 
-
 /* Blog post */
 .blog-container{
+    padding-top: 5%;
 }
 
 .blog-title{
@@ -188,10 +188,10 @@ header h1{
 .blog-description{
     margin-top: 0;
     color: #666666;
+    margin-bottom: 0;
 }
 
 .blog-author{
-    /* color: var(--top-nav-text-color); */
     margin-bottom: 0;
 }
 
@@ -208,7 +208,9 @@ header h1{
     padding-bottom: 30px;
 }
 
-.blog-content{
+.blog-content p, h3{
+    margin: 0;
+    padding-top: 9px;
 }
 
 /* Study skills */
