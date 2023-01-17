@@ -191,7 +191,6 @@ header h1{
 }
 
 .blog-author{
-    /* color: var(--top-nav-text-color); */
     margin-bottom: 0;
 }
 
@@ -208,7 +207,9 @@ header h1{
     padding-bottom: 30px;
 }
 
-.blog-content{
+.blog-content p, h3{
+    margin: 0;
+    padding-top: 9px;
 }
 
 /* Study skills */
