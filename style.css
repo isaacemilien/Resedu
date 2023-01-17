@@ -176,9 +176,9 @@ header h1{
     }
 }
 
-
 /* Blog post */
 .blog-container{
+    padding-top: 5%;
 }
 
 .blog-title{
