@@ -188,6 +188,7 @@ header h1{
 .blog-description{
     margin-top: 0;
     color: #666666;
+    margin-bottom: 0;
 }
 
 .blog-author{
