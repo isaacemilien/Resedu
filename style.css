@@ -43,7 +43,7 @@ main{
     width:100%;
     height: auto;
     object-fit: cover;
-    padding-bottom: 30px;
+    padding-bottom: 10px;
 }
 .flexible-video-container {
     position: relative;
@@ -214,6 +214,7 @@ header img{
 .blog-container h5:first-of-type{
     margin-top: 2mm;
     color: #666666;
+    margin-bottom: 0;
 }
 
 .blog-content *{
