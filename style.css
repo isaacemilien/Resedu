@@ -233,12 +233,18 @@ header img{
     margin-top: 2%;
 }
 
+.dropdown-block fieldset{
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+
 .dropdown-block h2{
     display: inline-block;
     margin: 0;
 }
 
-.dropdown-block label{
+.dropdown-block h2:nth-child(2){
     display: inline;
     float: right;
 }
@@ -253,11 +259,11 @@ input:checked ~ article{
     height: 200px;
 }
 
-.dropdown-block label{
+.dropdown-block label h2:nth-child(2){
     transition: transform .4s;
 }
 
-input:checked ~ label{
+input:checked ~ label h2:nth-child(2){
     transform: rotate(0.5turn);
 }
 
