@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- <link rel="stylesheet"href="normalize.css"> -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
     <title>Resedu</title>
 </head>
 <body>
@@ -43,11 +43,11 @@
             <h3>By Isaac Emilien</h3>
             <h5><time datetime="2022-10-29">October 29, 2022</time></h5>
             <div class="blog-content">
-                <p>This week’s learning was about the implementation and styling of forms, consisting of information about the uses for forms, form elements, and basic form CSS.</p>
+                <p>This week’s learning was about the implementation and styling of forms, consisting of uses for forms, form elements, and basic form CSS.</p>
                 <h3>HTML Form Uses</h3>
                 <p>Forms are used as a gateway for information to be collected from users, finding applications in account utilities, and customer service. Fully functional forms however typically make use of client side scripting language for validation, and a server side scripting language for data exchange.</p>
                 <h3>HTML Form Elements</h3>
-                <p>Core HTML forms are composed of two elements form and input. The form element acts as a container for all inner elements that will make up a form. Input elements make up the fields for which users interact with the given information.</p>
+                <p>Core HTML forms are composed of two elements: form and input. The form element acts as a container for all inner elements that will make up a form. Input elements make up the fields for which users interact witn.</p>
                 <h3>Implementations</h3>
                 <p>While implementing this week’s HTML forms, for the contact page, there were issues trying to use HTML built in validation. From reading Mozilla’s HTML documentation on input [8] attributes it was realised that an input element needs to have the ‘required’ field attached in order to properly use validation.</p>
             </div>  
@@ -66,7 +66,7 @@
                 <h3>CSS Media Query Breakpoints</h3>
                 <p>CSS media query breakpoints define a viewport value at which a style should be enacted.</p>
                 <h3>Implementations</h3>
-                <p>While implementing CSS media queries for different parts of the learning journal it was noticed that parts of the CSS being written seemed redundant.</p>
+                <p>While implementing CSS media queries for different parts of the learning journal it seemed as though CSS was being duplicated.</p>
                 <figure>
                     <img src="images/week-8-blog-css-01.png" alt="Week 8 css example images">
                     <figcaption>Image take from project highlighting desktop first CSS</figcaption>
@@ -75,7 +75,7 @@
                     <img src="images/week-8-blog-css-02.png" alt="Week 8 css example images">
                     <figcaption>Image take from project highlighting previous media query for desktop first CSS</figcaption>
                 </figure>
-                <p>With this further research was done on responsive design using W3CSchools [7]. From this it was understood that CSS implemented thus far was not mobile first, and had been designed with desktop in mind first and foremost. To solve this problem default styles were tailored for mobile, allowing for removal of two points setting the same property values.</p>
+                <p>With this, further research was done on responsive design using W3CSchools [7]. From this it was understood that CSS implemented thus far was not mobile first, and had been designed with desktop in mind. To solve this problem default styles were tailored for mobile, allowing for removal of the two duplicate points.</p>
             </div>  
         </article>
 
@@ -88,11 +88,11 @@
             <div class="blog-content">
                 <p>CI 435 week 7 further explored principles of responsive web design, topics covered were: how to approach the implementation of responsive design elements, making media responsive, and the safe use of media from the web.</p>
                 <h3>Core Principles</h3>
-                <p>The core principles of how to approach responsive web design implementation is the 3 column method, this proposes that the structure of web pages when viewed on mobile take up 1 column, on table or mobile portrait take up 2 columns, and on desktop take up 3 columns.</p>
+                <p>The core principles of how to approach responsive web design implementation is the 3 column method, this proposes that the structure of web pages when viewed on mobile take up 1 column, on tablet or mobile portrait take up 2 columns, and on desktop take up 3 columns.</p>
                 <h3>Responsive Media</h3>
                 <p>Responsive media is the sizing of webpage images and videos based on screen size, which can be challenging factoring the range of media quality that can be chosen. Media flexibility using vanilla CSS can be achieved using media queries and ratio based width height sizes.</p>
                 <h3>Safe Media</h3>
-                <p>Safe use of media is of high priority given the context of how our web pages are presented in CI435. Our web pages are available to the open web, this means that even though we are in an educational context, the content we use is still open to the public, leaving us liable for use of content that is not ours. To account for this creative commons content can be used.</p>
+                <p>Safe use of media is of high priority given our web pages are available to the open web, meaning even though we are in an educational context, the content we use is still open to the public, leaving us liable. To account for this creative commons content has be used.</p>
             </div>  
         </article>
         
@@ -107,9 +107,7 @@
                 <h3>CSS Fluid Layouts</h3>
                 <p>Fluid layouts use relative units and CSS layout modules to create responsive content. CSS layout modules such as grids, flexbox, and multi-column, allow for row-column placing of elements without having to use the position properties directly.</p>
                 <h3>CSS Media Queries</h3>
-                <p>Media queries are CSS elements that apply styles to HTML based on certain screen size, in our case the size of the screen; this allows us to structure our webpage to best suit the screen size of the device that it is being viewed through.</p>
-                <h3>Implementations</h3>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iure, qui?</p>
+                <p>Media queries are CSS elements that apply styles to HTML based on certain units, in our case the size of the screen; this allows us to structure our webpage to best suit the screen size of the device that it is being viewed on.</p>
             </div>  
         </article>
 
@@ -120,18 +118,18 @@
             <h3>By Isaac Emilien</h3>
             <h5><time datetime="2022-10-29">October 29, 2022</time></h5>
             <div class="blog-content">
-                <p>This week further CSS knowledge was further improved, which covered, positioning and sizing elements using the box model, and styling text.</p>
+                <p>This week CSS knowledge was further improved, covering, positioning and sizing elements using the box model, and styling text.</p>
                 <h3>Box Model</h3>
                 <p>The CSS box model allows one to dictate how parts of html are shown and placed on a page. In the box model parts of HTML are seen as boxes, these boxes can be logically moved or placed inside the bounds of other elements.</p>
                 <h3>Relative Units</h3>
-                <p>Relative units in CSS are values that change based on the page.This allows values that are assigned relative units to be dynamic to the size of content.</p>
+                <p>Relative units in CSS are values that change based on the page. This allows values that are assigned relative units to be dynamic to the size of content.</p>
                 <h3>Implementations</h3>
-                <p>This week fallback fonts were added, allowing unavailability of fonts to be accounted for and hinder user performance less. After a fallback font was selected, the custom font Lato was also added; to do so the new font file was added to the website folder structure, and a font face was defined in the styles.css. During implementation of the font there were legal and ethical concerns, this is because implementing external content made by someone without their permission could breach intellectual property rights, resulting in potential liability. To account for this the font Lato was sourced from Google Fonts [6], which is a free to use, open source library for fonts.</p>
+                <p>This week fallback fonts were added, allowing unavailability of fonts to be accounted for and hinder user performance less. After a fallback font was selected, the custom font Lato was also added; to do so a new font file was added to the website folder structure, and a font face was defined in the styles.css. During implementation of the font there were legal and ethical concerns, this is because implementing external content made by someone without their permission could breach intellectual property rights, resulting in potential liability. To account for this the font Lato was sourced from Google Fonts [6], which is free to use, open source.</p>
                 <figure>
                     <div class="flexible-video-container">
                         <iframe width="861" height="538" src="https://www.youtube.com/embed/jNsCyPvVeEk" title="Adding web fonts to your site with Google Fonts" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>                    
                     </div>
-                    <figcaption>Video provided prompted by Google Fonts exclaiming use of their font API</figcaption>
+                    <figcaption>Video provided by Google Fonts exclaiming use of their font API</figcaption>
                 </figure>
 
             </div>  
@@ -166,13 +164,11 @@
             <h3>By Isaac Emilien</h3>
             <h5><time datetime="2022-10-15">October 15, 2022</time></h5>
             <div class="blog-content">
-                <p>This week’s learning covered the use of section and div elements, navigation, and various elements to display information. Alongside this a HTML table representing </p>
+                <p>This week’s learning covered the use of section and div elements, navigation, and various elements to display information.</p>
                 <h3>Section and Div Elements</h3>
                 <p>Section and div elements are used to define logical collections of information on the page. Sections more so encompass typical page specific content such as headers, footers, and navigation. Div elements define looser general divisions of content.</p>
                 <h3>Document Navigation</h3>
-                <p>Document navigation is achieved using anchors and links. Anchors are defined using the <a> tag; anchors hold links which connect to another page, or page area.</p>
-                <h3>Implementations</h3>
-                <p>A table was added containing information about university lectures and labs. After adding the table the overall look was not satisfactory; to further style it a blogpost from Anna Fitzgerald was referenced [4, allowing for change of colour and text style using CSS></p>
+                <p>Document navigation is achieved using anchors and links. Anchors are defined using the 'a' tag; anchors hold links which connect to another page, or page area.</p>
             </div>  
         </article>
         
@@ -185,7 +181,7 @@
             <div class="blog-content">
                 <p>This week learning covered the basics of HTML which included: tags and elements, block and inline elements, and natural document structure. Furthermore, newly learned elements were implemented.</p>
                 <h3>Tags and Elements</h3>
-                <p>Tags and elements are keywords in HTML when applied to text define their meaning [2].  Elements are the function itself,  tags define bounds of an element.</p>
+                <p>Tags and elements are keywords in HTML that when applied to text define their meaning [2].  Elements are the function itself,  tags define bounds of an element.</p>
                 <h3>Block and Inline Elements</h3>
                 <p>HTML block and inline are two types of element. Block elements naturally stack horizontally and fill a page row, examples include h1, and p. Inline elements are held inside block elements and can be used to perform a function on them.</p>
                 <h3>Natural Document Structure</h3>
@@ -207,7 +203,7 @@
                 <p>This week's lectures covered the fundamentals of web development. This covers responsive web design, standards, and reasoning behind HTML and CSS rules. Further knowledge gained about these were:</p>
                 <h3>Responsive Design</h3>
                 <p>Responsive design is the adjusting of website scaling based on the device screen. Meaning that the content can be seen on a large variety of devices.</p>
-                <p>While learning this topic there was difficulty understanding how basic responsive design worked, from reading [1] interaction-design.org’s article and new understanding  that responsive design is implemented based first on by reading the width of  a user's device to gauge how to size elements.</p>
+                <p>While learning this topic there was difficulty understanding how basic responsive design worked, from reading [1] interaction-design.org’s article a new understanding  that responsive design is implemented based first on by reading the width of  a user's device to gauge how to size elements.</p>
                 <h3>Web Standards</h3>
                 <p>Web standards are a set of rules for displaying information on the web. Web standards allow for information to be shown in a similar way on different platforms.</p>
             </div>  
@@ -225,8 +221,6 @@
             <p>[7]  Responsive web design media queries. (n.d.). W3Schools Online Web Tutorials. <a href="https://www.w3schools.com/css/css_rwd_mediaqueries.asp">w3schools.com/css/css_rwd_mediaqueries.asp</a></p>
             <p>[8]	HTML attribute: Required. (n.d.). MDN Web Docs. <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/required">developer.mozilla.org/en-US/docs/Web/HTML/Attributes/required</a></p>
         </section>
-        <figure></figure>
-        <figcaption>jdlkjfa;slkdfjas;lkj</figcaption>
     </main>
     <footer>
         <a href="mailto:i.emilien1@uni.brighton.ac.uk">Email</a>
